@@ -56,12 +56,10 @@ body {
       top: 0;
       margin: 0 auto;
       padding: 10px;
-      margin-top: 61px; //??????
+      margin-top: 61px;
       mix-blend-mode: normal;
       opacity: 0.5;
       background: rgba(0, 0, 0, 0.4);
-      // background: linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
-      //background: linear-gradient(315.06deg, #152649 5%, #4F525C 100%);
       .header__menu {
         .menu__list {
           display: flex;
@@ -84,14 +82,9 @@ body {
       flex-direction: column;
       padding-top: 185px;
       padding-bottom: 90px;
-      // justify-content: center;
       align-items: center;
-      // background-image: 
-      // background: url(../img/header-bg_room-unsplash.png) top center no-repeat, linear-gradient(315.06deg, #152649 5%, #4F525C 100%);
-      // background: url(../img/header-bg_room-unsplash.png) top center no-repeat, linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
       background: url(../img/header-bg_room-unsplash.png) top center no-repeat;
-      // mix-blend-mode: normal;
-      // opacity: 0.12;
+      mix-blend-mode: normal;
       .promote__title {
         font-family: $family;
         font-style: normal;
