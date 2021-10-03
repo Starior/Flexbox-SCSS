@@ -7,6 +7,7 @@ $text_button: #0F3D33;
 $color_bg_button: #50E3C2;
 $color_black: #000000;
 $color_dark: #323232;
+$color_blue-hover: yellowgreen;
 $test-text: "Test box";
 @mixin test-box() {
   width: 100%;
@@ -57,20 +58,21 @@ body {
       margin: 0 auto;
       padding: 10px;
       margin-top: 61px;
-      mix-blend-mode: normal;
-      opacity: 0.5;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 0, 0, 0.2);
       .header__menu {
         .menu__list {
           display: flex;
           align-items: center;
           .menu__item {
-            padding-left: 30px;
+            padding-left: 50px;
             a {
               font-family: $family;
               font-size: 16px;
-              line-height: 150%;
+              line-height: 24px;
               color: $color_lite1;
+              &:hover {
+                color: $color_blue-hover;
+              }
             }
           }
         }
@@ -121,6 +123,9 @@ body {
         background: $color_bg_button;
         border-radius: 3px;
         margin-bottom: 11px;
+        &:hover {
+          background: $color_blue-hover;
+        }
       }
       .promote__prompt {
         font-family: $family;
@@ -131,9 +136,6 @@ body {
         text-align: center;
         color: $color_lite1;
       }
-    }
-    .header__promote:before {
-      background: linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
     }
   }
 }

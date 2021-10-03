@@ -137,9 +137,7 @@ body {
   margin: 0 auto;
   padding: 10px;
   margin-top: 61px;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
 }
 .header .header__container .header__body .header__menu .menu__list {
   display: -webkit-box;
@@ -150,13 +148,16 @@ body {
           align-items: center;
 }
 .header .header__container .header__body .header__menu .menu__list .menu__item {
-  padding-left: 30px;
+  padding-left: 50px;
 }
 .header .header__container .header__body .header__menu .menu__list .menu__item a {
   font-family: "Inter", sans-serif;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 24px;
   color: #DBE4F1;
+}
+.header .header__container .header__body .header__menu .menu__list .menu__item a:hover {
+  color: yellowgreen;
 }
 .header .header__container .header__promote {
   width: 100%;
@@ -173,6 +174,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: url(../img/header-bg_room-unsplash.png) top center no-repeat;
+  mix-blend-mode: normal;
 }
 .header .header__container .header__promote .promote__title {
   font-family: "Inter", sans-serif;
@@ -211,6 +213,9 @@ body {
   border-radius: 3px;
   margin-bottom: 11px;
 }
+.header .header__container .header__promote .promote__button:hover {
+  background: yellowgreen;
+}
 .header .header__container .header__promote .promote__prompt {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -219,9 +224,6 @@ body {
   line-height: 28px;
   text-align: center;
   color: #DBE4F1;
-}
-.header .header__container .header__promote:before {
-  background: linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
 }
 
 .test-box {
