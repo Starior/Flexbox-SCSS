@@ -117,7 +117,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
 }
 .header .header__container .header__body {
   max-width: 1188px;
@@ -159,7 +158,8 @@ body {
 .header .header__container .header__body .header__menu .menu__list .menu__item a:hover {
   color: yellowgreen;
 }
-.header .header__container .header__promote {
+
+.content-top__container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,10 +173,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(../img/header-bg_room-unsplash.png) top center no-repeat;
+  background: url(../img/BG-top.png) top center no-repeat, linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
   mix-blend-mode: normal;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.header .header__container .header__promote .promote__title {
+.content-top__container .promote__title {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -187,7 +192,7 @@ body {
   color: #FFFFFF;
   margin-bottom: 5px;
 }
-.header .header__container .header__promote .promote__text {
+.content-top__container .promote__text {
   max-width: 35%;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -198,7 +203,7 @@ body {
   color: #DBE4F1;
   margin-bottom: 27px;
 }
-.header .header__container .header__promote .promote__button {
+.content-top__container .promote__button {
   width: 227px;
   height: 50px;
   padding: 15px 27.5px 16px 28.5px;
@@ -213,10 +218,10 @@ body {
   border-radius: 3px;
   margin-bottom: 11px;
 }
-.header .header__container .header__promote .promote__button:hover {
+.content-top__container .promote__button:hover {
   background: yellowgreen;
 }
-.header .header__container .header__promote .promote__prompt {
+.content-top__container .promote__prompt {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: normal;

@@ -45,7 +45,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
     .header__body {
       max-width: 1188px;
       width: 74%;
@@ -78,65 +77,71 @@ body {
         }
       }
     }
-    .header__promote {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      padding-top: 185px;
-      padding-bottom: 90px;
-      align-items: center;
-      background: url(../img/header-bg_room-unsplash.png) top center no-repeat;
-      mix-blend-mode: normal;
-      .promote__title {
-        font-family: $family;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 46px;
-        line-height: 68px;
-        text-align: center;
-        letter-spacing: -0.3px;
-        color: $color_white;
-        margin-bottom: 5px;
-      }
-      .promote__text {
-        max-width: 35%;
-        font-family: $family;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
-        line-height: 34px;
-        text-align: center;
-        color: $color_lite1;
-        margin-bottom: 27px;
-      }
-      .promote__button {
-        width: 227px;
-        height: 50px;
-        padding: 15px 27.5px 16px 28.5px;
-        font-family: $family;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 19px;
-        text-align: center;
-        color: $text_button;
-        background: $color_bg_button;
-        border-radius: 3px;
-        margin-bottom: 11px;
-        &:hover {
-          background: $color_blue-hover;
-        }
-      }
-      .promote__prompt {
-        font-family: $family;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 28px;
-        text-align: center;
-        color: $color_lite1;
-      }
+  }
+}
+
+.content-top__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 185px;
+  padding-bottom: 90px;
+  align-items: center;
+  background: url(../img/BG-top.png) top center no-repeat, linear-gradient(316.5deg, #152649 0.52%, #4F525C 94.99%);
+  mix-blend-mode: normal;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .promote__title {
+    font-family: $family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    color: $color_white;
+    margin-bottom: 5px;
+  }
+  .promote__text {
+    max-width: 35%;
+    font-family: $family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: $color_lite1;
+    margin-bottom: 27px;
+  }
+  .promote__button {
+    width: 227px;
+    height: 50px;
+    padding: 15px 27.5px 16px 28.5px;
+    font-family: $family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: $text_button;
+    background: $color_bg_button;
+    border-radius: 3px;
+    margin-bottom: 11px;
+    &:hover {
+      background: $color_blue-hover;
     }
+  }
+  .promote__prompt {
+    font-family: $family;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: $color_lite1;
   }
 }
 
