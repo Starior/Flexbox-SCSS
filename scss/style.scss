@@ -12,6 +12,7 @@ $color_red: #FC5C65;
 $color_violet: #A665FB;
 $color_gray:#878B90;
 $color_gray2:#666666;
+$color_gray3:#8E8E8E;
 $color_yellow-hover: rgb(177, 230, 71);
 @mixin button($br, $bg, $pv, $ph) {
   display: flex;
@@ -485,6 +486,18 @@ $color_yellow-hover: rgb(177, 230, 71);
         }
         &>*:not(:last-child) {
           margin-bottom: 7px;
+        }
+        // &>*:nth-child(3) {
+        //   list-style-image: url(../img/list-uncheck.png);
+        // }
+      }
+      .pricing__benefits-basic {
+        @for $i from 3 through 4 {
+          &>*:nth-child(#{$i}) {
+            list-style-image: url(../img/list-uncheck.png);
+            color: $color_gray3;
+            text-decoration: line-through;
+          }
         }
       }
       .pricing__price-button {

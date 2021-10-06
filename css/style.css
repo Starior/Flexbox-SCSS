@@ -693,6 +693,16 @@ h6 {
 .pricing .pricing__plan-container .price-block .pricing__benefits > *:not(:last-child) {
   margin-bottom: 7px;
 }
+.pricing .pricing__plan-container .price-block .pricing__benefits-basic > *:nth-child(3) {
+  list-style-image: url(../img/list-uncheck.png);
+  color: #8E8E8E;
+  text-decoration: line-through;
+}
+.pricing .pricing__plan-container .price-block .pricing__benefits-basic > *:nth-child(4) {
+  list-style-image: url(../img/list-uncheck.png);
+  color: #8E8E8E;
+  text-decoration: line-through;
+}
 .pricing .pricing__plan-container .price-block .pricing__price-button {
   margin-left: 44px;
   margin-bottom: 14px;
