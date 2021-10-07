@@ -252,12 +252,16 @@ h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-@media (max-width: 494px) {
+@media (max-width: 749px) {
   .features__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .features__container > * {
+    width: 90% !important;
+    margin-bottom: 30px !important;
   }
 }
 .features__container .features__feature {
@@ -337,7 +341,7 @@ h6 {
 }
 @media (max-width: 749px) {
   .features__container .features__line {
-    visibility: hidden;
+    display: none;
   }
 }
 @media (max-width: 494px) {
@@ -731,5 +735,123 @@ h6 {
   }
   .pricing .pricing__plan-container > * {
     margin-right: 0px !important;
+  }
+}
+
+.testimonials .testimonials__container {
+  width: 71.5%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #E8E8EA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 142px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.testimonials .testimonials__container > *:not(:last-child) {
+  border-right: 1px solid #E8E8EA;
+}
+.testimonials .testimonials__container .testimonials__block {
+  width: 33.3%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 46px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__quote {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 98px;
+  line-height: 119px;
+  letter-spacing: -0.1px;
+  color: #DBE4F1;
+  margin-bottom: -16px;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: -0.1px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__author-block {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__author-block .testimonials__author-icon {
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background-color: #0F3D33;
+  margin-right: 21px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__author-block .testimonials__author-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__author-block .testimonials__author-sign .testimonials__author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #323232;
+}
+.testimonials .testimonials__container .testimonials__block .testimonials__author-block .testimonials__author-sign .testimonials__from {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.3px;
+  color: #323232;
+}
+@media (max-width: 1200px) {
+  .testimonials .testimonials__container {
+    width: 90%;
+  }
+}
+@media (max-width: 835px) {
+  .testimonials .testimonials__container {
+    width: 95%;
+  }
+}
+@media (max-width: 835px) and (max-width: 749px) {
+  .testimonials .testimonials__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonials .testimonials__container > * {
+    width: 100% !important;
+    border-right: 0px solid #E8E8EA !important;
+  }
+  .testimonials .testimonials__container > *:not(:last-child) {
+    border-bottom: 1px solid #E8E8EA;
   }
 }
