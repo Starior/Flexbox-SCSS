@@ -1092,6 +1092,12 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 880px) {
+  .contact-form__container .contact-form__cta {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
 .contact-form__container .contact-form__cta .contact-form__text {
   margin-right: 61px;
   font-weight: bold;
@@ -1101,6 +1107,7 @@ a:hover {
   color: #000000;
 }
 .contact-form__container .contact-form__form-block {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1122,7 +1129,7 @@ a:hover {
   color: #000000;
 }
 .contact-form__container .contact-form__form-block .contact-form__form {
-  width: 558px;
+  width: 34.875%;
   max-height: 485px;
   background: #FFFFFF;
   border: 1px solid #E8E8EA;
@@ -1132,6 +1139,16 @@ a:hover {
           box-shadow: 0px 22px 54px rgba(67, 87, 138, 0.29);
   border-radius: 10px;
   padding: 50px 50px;
+}
+@media (max-width: 880px) {
+  .contact-form__container .contact-form__form-block .contact-form__form {
+    width: 50%;
+  }
+}
+@media (max-width: 880px) and (max-width: 632px) {
+  .contact-form__container .contact-form__form-block .contact-form__form {
+    width: 75%;
+  }
 }
 .contact-form__container .contact-form__form-block .contact-form__form .contact-form__form-self {
   display: -webkit-box;
