@@ -435,9 +435,10 @@ a {
         line-height: 28px;
         letter-spacing: -0.3px;
         text-transform: uppercase;
-        &:focus {
-          background-color: $color_turquoise;
-        }
+        // &:focus,
+      }
+      .selected {
+        background-color: $color_turquoise;
       }
     }
   }
@@ -475,18 +476,21 @@ a {
       .pricing__price {
         display: flex;
         font-weight: bold;
-        font-size: 46px;
-        line-height: 60px;
-        letter-spacing: -0.3px;
-        color: $color_black;
         margin-left: 45px;
         margin-bottom: 5px;
         .dollar {
-          align-self: center;
+          // align-self: center;
           font-size: 30px;
           line-height: 36px;
           letter-spacing: -1.2px;
           padding-right: 1px;
+          margin-top: 9px;
+        }
+        .price {
+          font-size: 46px;
+          line-height: 60px;
+          letter-spacing: -0.3px;
+          color: $color_black;
         }
         .slash {
           font-size: 19px;

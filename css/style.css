@@ -699,7 +699,7 @@ a:hover {
   letter-spacing: -0.3px;
   text-transform: uppercase;
 }
-.pricing .pricing__choice-container .pricing__choice-buttons .pricing__choice-button:focus {
+.pricing .pricing__choice-container .pricing__choice-buttons .selected {
   background-color: #50E3C2;
 }
 .pricing .pricing__plan-container {
@@ -746,21 +746,21 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   font-weight: bold;
-  font-size: 46px;
-  line-height: 60px;
-  letter-spacing: -0.3px;
-  color: #000000;
   margin-left: 45px;
   margin-bottom: 5px;
 }
 .pricing .pricing__plan-container .price-block .pricing__price .dollar {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   font-size: 30px;
   line-height: 36px;
   letter-spacing: -1.2px;
   padding-right: 1px;
+  margin-top: 9px;
+}
+.pricing .pricing__plan-container .price-block .pricing__price .price {
+  font-size: 46px;
+  line-height: 60px;
+  letter-spacing: -0.3px;
+  color: #000000;
 }
 .pricing .pricing__plan-container .price-block .pricing__price .slash {
   font-size: 19px;
